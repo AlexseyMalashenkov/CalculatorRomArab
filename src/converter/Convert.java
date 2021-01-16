@@ -102,10 +102,6 @@ public class Convert {
     }
 
     public String arabicToRoman(int number) {
-        if (number < 1) {
-            throw new InputMismatchException(number + " некорректное число.");
-        }
-
         ArabToRom arabToRom = new ArabToRom();
 
         return arabToRom.toRoman(number);
