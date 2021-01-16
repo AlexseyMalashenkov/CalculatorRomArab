@@ -102,7 +102,7 @@ public class Convert {
     }
 
     public String arabicToRoman(int number) {
-        if ((number <= 0) || (number > 100)) {
+        if ((number < -100) || (number > 100)) {
             throw new IllegalArgumentException(number + " некорректное число.");
         }
 

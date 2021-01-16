@@ -46,7 +46,7 @@ public class Main {
                     System.out.println("Цифры из разных систем счисления");
                 }
             } catch (InputMismatchException exception) {
-                System.out.println("Калькулятор принимает цифры от 1 до 10 включительно. Выполняются операции +, -, *, /.");
+                System.out.println("Ошибка ввода.");
             }
         } else {
             System.out.println("Неправильный ввод. \nПример #1:\t1 + 2");

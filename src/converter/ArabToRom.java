@@ -1,12 +1,12 @@
 package converter;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 public class ArabToRom {
     private final static TreeMap<Integer, String> map = new TreeMap<>();
 
-    static {
-
+    public ArabToRom() {
         map.put(1000, "M");
         map.put(900, "CM");
         map.put(500, "D");
@@ -20,11 +20,16 @@ public class ArabToRom {
         map.put(5, "V");
         map.put(4, "IV");
         map.put(1, "I");
-
     }
 
     public final String toRoman(int number) {
+
+        if (number <= 0) {
+            throw new InputMismatchException("В римской системе счисления нет нуля и отрицательных чисел.");
+        }
+
         int l =  map.floorKey(number);
+
         if ( number == l ) {
             return map.get(number);
         }
