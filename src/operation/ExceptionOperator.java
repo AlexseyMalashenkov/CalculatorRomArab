@@ -3,9 +3,9 @@ package operation;
 import java.util.InputMismatchException;
 
 public class ExceptionOperator implements Operation{
-    private final char operation;
+    private final String operation;
 
-    public ExceptionOperator(char operation) {
+    public ExceptionOperator(String operation) {
         this.operation = operation;
     }
 

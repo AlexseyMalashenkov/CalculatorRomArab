@@ -33,7 +33,7 @@ public class Main {
                 int secondNum = arabToRoman.convert(mathExpression[2]);
                 boolean tmp2 = arabToRoman.isRom();
 
-                char operator = mathExpression[1].charAt(0);
+                String operator = mathExpression[1];
 
                 if (tmp1 == tmp2) {
                     Calculator calculator = new Calculator();
